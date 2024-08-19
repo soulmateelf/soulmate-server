@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "soulmate-server"
+version = "0.1.0"
+description = ""
+authors = ["kele <kelezxw@gmail.com>"]
+readme = "README.md"
+packages = [{include = "soulmate_server"}]
+
+[tool.poetry.scripts]
+app = "soulmate_server.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.103.0"
+uvicorn = "^0.23.2"
+redis = "^5.0.0"
+sqlalchemy = "^2.0.21"
+pymysql = "^1.1.0"
+uuid = "^1.30"
+pydantic-core = "^2.10.1"
+greenlet = "^3.0.0"
+tiktoken = "^0.5.1"
+pyjwt = "^2.8.0"
+python-multipart = "^0.0.6"
+slowapi = "^0.1.8"
+speechrecognition = "^3.10.0"
+pyttsx3 = "^2.90"
+apscheduler = "^3.10.4"
+paho-mqtt = "^1.6.1"
+azure-cognitiveservices-speech = "^1.32.1"
+pymilvus = "^2.3.3"
+pydub = "^0.25.1"
+markdown = "^3.5.1"
+elevenlabs = "^0.2.26"
+openpyxl = "^3.1.2"
+cryptography = "^41.0.7"
+firebase-admin = "^6.3.0"
+openai = "^0.28.1"
+httpx = "^0.26.0"
+matplotlib = "^3.8.3"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
